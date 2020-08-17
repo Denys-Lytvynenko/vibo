@@ -11,29 +11,35 @@
 
 <body>
 
-	<section class="top">
+	<section id="top" class="top">
 		<div class="container">
 			<header class="header">
 				<div class="header__inner">
 					<a class="logo" href="#">
 						<img src="img/logo.png" alt="">
 					</a>
-					<nav class="menu">
-						<ul class="menu__list">
-							<li class="menu__list-item">
-								<a href="#" class="menu__link">Home</a>
-							</li>
-							<li class="menu__list-item">
-								<a href="#" class="menu__link">About</a>
-							</li>
-							<li class="menu__list-item">
-								<a href="#" class="menu__link">App</a>
-							</li>
-							<li class="menu__list-item">
-								<a href="#" class="menu__link">Info</a>
-							</li>
-						</ul>
+					<nav id="menu" class="menu">
+						<div class="menu__inner">
+							<ul class="menu__list">
+								<li class="menu__list-item">
+									<a href="#top" class="menu__link">Home</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#benefits" class="menu__link">About</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#get" class="menu__link">App</a>
+								</li>
+								<li class="menu__list-item">
+									<a href="#contacts" class="menu__link">Info</a>
+								</li>
+							</ul>
+						</div>
 					</nav>
+					<div id="menu__btn" class="menu__btn-wrapper">
+						<div class="menu__btn"></div>
+					</div>
+					<!-- <button  class="menu__btn"></button> -->
 				</div>
 			</header>
 			<div class="top__inner">
@@ -82,7 +88,7 @@
 		</div>
 	</section>
 
-	<section class="benefits">
+	<section id="benefits" class="benefits">
 		<div class="container">
 			<div class="benefits__inner">
 				<div class="benefits__info">
@@ -142,7 +148,7 @@
 		</div>
 	</section>
 
-	<section class="get">
+	<section id="get" class="get">
 		<div class="container">
 			<div class="get__inner">
 				<div class="get__wrapper">
@@ -157,10 +163,10 @@
 							elementum sed sit ametsuada.</p>
 						<div class="get__store">
 							<a class="get__store-link" href="#">
-								<img src="img/download-apple.png" alt="">
+								<img class="get__store-img" src="img/download-apple.png" alt="">
 							</a>
 							<a class="get__store-link" href="#">
-								<img src="img/download-google.png" alt="">
+								<img class="get__store-img" src="img/download-google.png" alt="">
 							</a>
 						</div>
 					</div>
@@ -170,7 +176,7 @@
 		</div>
 	</section>
 
-	<section class="contacts">
+	<section id="contacts" class="contacts">
 		<div class="container">
 			<div class="contacts__inner">
 				<div class="contacts__top">
@@ -243,7 +249,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__inner">
-				<div class="footer__copy">© 2018 - Appo,All Right Reserved</div>
+				<div class="footer__copy">© <script type="text/javascript">document.write(new Date().getFullYear());</script> - Appo, All Right Reserved</div>
 				<div class="footer__social">
 					<ul class="footer__list">
 						<li class="footer__list-item">
